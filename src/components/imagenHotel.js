@@ -29,7 +29,12 @@ const ImagenHotel = () => {
         className="imagen-principal"
         Tag="section"
         fluid={imageData}
-      ></BackgroundImage>
+      >
+        <div className="texto-imagen">
+          <h1>Bienvenido a Hotel Gatsby</h1>
+          <p>El mejor hotel para tus vacaciones</p>
+        </div>
+      </BackgroundImage>
     </>
   )
   //   <BackgroundImage tag="section" fluid={image.sharp.fluid}></BackgroundImage>
