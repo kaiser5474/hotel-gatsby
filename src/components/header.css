@@ -1,0 +1,27 @@
+header {
+  background-color: #333;
+  padding: 1rem;
+}
+
+.container-header {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+}
+
+.encabezado-pagina {
+  color: black;
+  text-align: center;
+}

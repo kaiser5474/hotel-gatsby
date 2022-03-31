@@ -1,4 +1,36 @@
 html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 16px;
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  line-height: 1.5;
+}
+
+h1,
+h2 {
+  font-family: "Roboto", serif;
+}
+
+h3 {
+  font-family: "PT Sans", sans-serif;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;   
+}
+
+/* html {
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   font: 112.5%/1.45em georgia, serif, sans-serif;
@@ -594,4 +626,4 @@ pre tt:after {
   html {
     font-size: 100%;
   }
-}
+} */
