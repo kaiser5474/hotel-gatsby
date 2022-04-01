@@ -6,8 +6,14 @@ module.exports = {
     siteUrl: `https://gatsbystarterdefaultsource.gatsbyjs.io/`,
   },
   plugins: [
+    {
+      resolve: `gatsby-source-datocms`,
+      options: {
+        apiToken: `eeee127b5c8783bfeda7b16cbba71a`
+      }
+    },
     `gatsby-plugin-react-helmet`,
-    //`gatsby-plugin-image`,
+    `gatsby-plugin-image`,
     `gatsby-plugin-styled-components`,
     {
       resolve: `gatsby-source-filesystem`,
@@ -31,9 +37,6 @@ module.exports = {
     //     display: `minimal-ui`,
     //     //icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
     //   },
-    // },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    // },    
   ],
 }

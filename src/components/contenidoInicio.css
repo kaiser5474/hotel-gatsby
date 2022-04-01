@@ -1,0 +1,17 @@
+h2 {
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 4rem;
+}
+
+.texto-inicio2 {
+  padding-top: 4rem;
+  max-width: 120px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.imagen-principal {
+  height: "100px";
+  width: "100px";
+}
