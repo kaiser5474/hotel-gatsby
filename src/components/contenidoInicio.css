@@ -6,12 +6,20 @@ h2 {
 
 .texto-inicio2 {
   padding-top: 4rem;
-  max-width: 120px;
+  max-width: 1200px;
   width: 95%;
   margin: 0 auto;
 }
 
-.imagen-principal {
-  height: "100px";
-  width: "100px";
+@media (min-width: 768px) {
+  .texto-inicio2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+}
+
+p {
+  line-height: 2;
+  font-size: 1rem;
 }

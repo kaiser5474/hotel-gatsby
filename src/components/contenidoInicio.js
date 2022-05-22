@@ -3,8 +3,8 @@ import {
   graphql,
   useStaticQuery
 } from 'gatsby'
-import "./contenidoInicio.css"
-import Img  from 'gatsby-image'
+import "./contenidoInicio.css";
+import Img from 'gatsby-image';
 
 const ContenidoInicio = () => {
   const informacion = useStaticQuery(graphql `

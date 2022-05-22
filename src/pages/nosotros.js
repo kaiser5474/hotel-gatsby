@@ -1,10 +1,10 @@
 import * as React from "react"
 import Layout from "../components/layout"
-// import { Link } from "gatsby"
+import ContenidoNosotros from "../components/contenidoNosotros"
 
 const Nosotros = () => (
   <Layout>
-    <h1 className="encabezado-pagina">Nosotros</h1>
+    <ContenidoNosotros/>
   </Layout>
 )
 

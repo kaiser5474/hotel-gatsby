@@ -37,7 +37,6 @@ const ImagenHotel = () => {
       </BackgroundImage>
     </>
   )
-  //   <BackgroundImage tag="section" fluid={image.sharp.fluid}></BackgroundImage>
 }
 
 export default ImagenHotel
