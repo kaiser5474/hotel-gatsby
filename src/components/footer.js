@@ -18,14 +18,14 @@ const Contenido = styled.p`
     padding: 1rem;
 `
 
-const footer = () => {
+const footer = ({title}) => {
     const year = new Date().getFullYear();
   return (
     <>
         <header>
         <div className="container-header">
             <EnlaceHome to="/">
-            <h1>Hotel Gatsby</h1>
+            <h1>{title}</h1>
             </EnlaceHome>
             <Navegacion />
         </div>

@@ -4,8 +4,13 @@ import Footer from "../components/footer";
 import Helmet from "react-helmet";
 import "./layout.css"
 import { createGlobalStyle } from "styled-components";
+import UseSeo from '../hooks/use-seo';
 
 const layout = props => {
+
+  const seo = UseSeo();
+  const {siteName, fallbackSeo: {description, title}} = seo;
+  //console.log(seo);
   const GlobalStyle = createGlobalStyle`
   body {
       //background-color: red;
@@ -19,7 +24,8 @@ const layout = props => {
   return (
     <>
       <Helmet>
-        <title>Gatsby Hotel</title>
+        <title>{title}</title>
+        <meta name="description" content={description}/>
         <link
           rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -38,7 +44,7 @@ const layout = props => {
       {/* <GlobalStyle> */}
         <Header />
         {props.children}
-        <Footer/>
+        <Footer title={title}/>
       {/* </GlobalStyle> */}
     </>
   )
