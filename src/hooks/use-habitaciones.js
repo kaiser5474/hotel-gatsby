@@ -1,4 +1,4 @@
-import React from 'react'
+// import react from 'react';
 import { graphql, useStaticQuery } from "gatsby";
 
 const useHabitaciones = () => {
@@ -20,7 +20,7 @@ const useHabitaciones = () => {
       }    
     `);
 
-    console.log(data);
+    //console.log(data);
   return data.allDatoCmsHabitacion.nodes.map(habitacion => ({
       titulo: habitacion.titulo,
       id: habitacion.id,

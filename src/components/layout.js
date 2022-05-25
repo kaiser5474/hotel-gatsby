@@ -1,8 +1,9 @@
-import React from "react"
-import Header from "../components/header"
-import Helmet from "react-helmet"
+import React from "react";
+import Header from "../components/header";
+import Footer from "../components/footer";
+import Helmet from "react-helmet";
 import "./layout.css"
-import { createGlobalStyle } from "styled-components"
+import { createGlobalStyle } from "styled-components";
 
 const layout = props => {
   const GlobalStyle = createGlobalStyle`
@@ -37,6 +38,7 @@ const layout = props => {
       {/* <GlobalStyle> */}
         <Header />
         {props.children}
+        <Footer/>
       {/* </GlobalStyle> */}
     </>
   )

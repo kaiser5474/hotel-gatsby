@@ -23,8 +23,7 @@ const ContenidoInicio = () => {
   }
     `)
 
-    const {titulo, contenido, imagen} = informacion.allDatoCmsPagina.nodes[0]
-    console.log(informacion.allDatoCmsPagina.nodes[0])
+    const {titulo, contenido, imagen} = informacion.allDatoCmsPagina.nodes[0];
   return ( 
   <>
     <h2> {titulo} </h2> 

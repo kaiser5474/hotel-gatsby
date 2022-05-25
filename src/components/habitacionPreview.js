@@ -29,7 +29,7 @@ const HabitacionPreview = ({habitacion}) => {
   return (
     <div>
         <Image
-                fluid={imagen.fluid}
+            fluid={imagen.fluid}
             />
         <Contenido>
             <Titulo>{titulo}</Titulo>
